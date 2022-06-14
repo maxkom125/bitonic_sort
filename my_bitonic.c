@@ -147,7 +147,7 @@ void bitonicMerge(long long a[], long long start_index, long long cnt, int dir)
                 array_size,                      // enire array
                 MPI_LONG_LONG,
                 sendTo(a2_global_start),         // paired process from second half of tmp global array (with cnt elements)
-                cnt,                             // tag
+                0,                               // tag
                 MPI_COMM_WORLD                   // default comm.
             );
 
@@ -159,7 +159,7 @@ void bitonicMerge(long long a[], long long start_index, long long cnt, int dir)
                 array_size,                      // one data item
                 MPI_LONG_LONG,               
                 sendTo(a2_global_start),         // paired process from second half of tmp global array (with cnt elements)
-                cnt,                             // tag
+                1,                               // tag
                 MPI_COMM_WORLD,                  // default comm.
                 MPI_STATUS_IGNORE                // ignore info about message received
             );
@@ -181,7 +181,7 @@ void bitonicMerge(long long a[], long long start_index, long long cnt, int dir)
                 array_size,                      // one data item
                 MPI_LONG_LONG,               
                 sendTo(a1_global_start),         // paired process from second half of tmp global array (with cnt elements)
-                cnt,                             // tag
+                0,                               // tag
                 MPI_COMM_WORLD,                  // default comm.
                 MPI_STATUS_IGNORE                // ignore info about message received
             );
@@ -193,7 +193,7 @@ void bitonicMerge(long long a[], long long start_index, long long cnt, int dir)
                 array_size,                      // enire array
                 MPI_LONG_LONG,
                 sendTo(a1_global_start),         // paired process from second half of tmp global array (with cnt elements)
-                cnt,                             // tag
+                1,                               // tag
                 MPI_COMM_WORLD                   // default comm.
             );
         }
