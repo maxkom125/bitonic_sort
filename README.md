@@ -5,12 +5,12 @@ https://en.wikipedia.org/wiki/Bitonic_sorter
 
 How to run and debug the program, read in the file header.
 
-Реализована параллельная битонная сортировка в условиях ограниченной памяти.
+Implemented parallel bitonic sorting under limited memory conditions.
 
-Общая используемая память: 2 длины входного массива.
+Total memory used: 2 lengths of the input array.
 
-На каждом процессе не больше 2 длин входного массива деленного на количество процессов.
+Each process has at most 2 lengths of the input array divided by the number of processes.
 
-На одном процессе весь массив не собирается.
+On one process the entire array is not collected.
 
-Правильность работы можно проверить поставив PRINT_RESULTS 1.
+Correction of the calculations can be checked by setting PRINT_RESULTS 1.
