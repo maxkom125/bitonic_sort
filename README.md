@@ -1,9 +1,10 @@
 # bitonic_sort
 Batcher bitonic mergesort.
+Language: C.
 
 https://en.wikipedia.org/wiki/Bitonic_sorter
 
-How to run and debug the program, read in the file header.
+To run and debug the program, check the file (.c) header.
 
 Implemented parallel bitonic sorting under limited memory conditions.
 
